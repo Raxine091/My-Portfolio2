@@ -127,6 +127,10 @@
       margin-bottom: 1.6rem;
       animation: fadeUp 0.7s ease both;
     }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
 
     .hero-text h1 {
       font-family: 'Cormorant Garamond', serif;
@@ -175,9 +179,10 @@
     .btn:hover { transform: translateY(-2px); }
 
     .btn-primary {
-      background: var(--accent);
-      color: var(--bg);
+      background: #c8a86e42;
+      color: var(--accent);
       box-shadow: 0 4px 24px rgba(200,169,110,0.3);
+      border: 1px solid #c8a86e;
     }
     .btn-primary:hover { box-shadow: 0 6px 30px rgba(200,169,110,0.45); }
 
@@ -263,15 +268,17 @@
 
     .about-grid {
       display: grid;
-      grid-template-columns: repeat (1 1fr);
+      grid-template-columns: 1fr 1fr;
       gap: 4rem;
       align-items: start;
     }
 
+    .about-bio { order: 1; }
     .about-bio { color: var(--muted); line-height: 1.9; }
     .about-bio p + p { margin-top: 1rem; }
 
     .skills-list {
+      order: 2;
       display: flex;
       flex-wrap: wrap;
       gap: 0.5rem;
@@ -282,13 +289,14 @@
       font-size: 0.78rem;
       padding: 0.35rem 0.85rem;
       border-radius: 20px;
-      background: var(--surface);
-      border: 1px solid var(--border);
+      background: #ffffff25;
+      border: 1px solid #ffffff40;
       color: var(--text);
       letter-spacing: 0.04em;
     }
     
     .tech-list {
+      order: 2;
       display: flex;
       flex-wrap: wrap;
       gap: 0.5rem;
@@ -298,13 +306,14 @@
       font-size: 0.78rem;
       padding: 0.35rem 0.85rem;
       border-radius: 20px;
-      background: var(--accent);
-      border: 1px solid var(--border2);
-      color: var(--bg);
+      background: #c8a86e41;
+      border: 1px solid #c8a86e;
+      color: #c8a86e;
       letter-spacing: 0.04em;
     }
     
     .stats-grid {
+      order: 3;
       margin-top: 2rem;
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -619,7 +628,7 @@
           View My Work
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
-        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        <a href="#contact" class="btn btn-primary">Get in Touch</a>
       </div>
     </div>
 
@@ -664,6 +673,7 @@
           <span class="tech-tag">Wordpress</span>
           <span class="tech-tag">MySQL</span>
           <span class="tech-tag">Apache</span>
+        </div>
       </div>
         
       <div class="stats-grid reveal">
@@ -793,7 +803,7 @@
             <span class="tag">Apache</span>
           </div>
           <h3 class="project-title">IT Support Ticketing System</h3>
-          <p class="project-desc">Custom Built. A Ticketing system used to log and assign tickets to issues reported to the IT department on a daily basis. The system automatically assigns a ticket number and keeps track of ticket status. It currently runs on localhost in preparation to being deployed to the institution server. More flexible versions will roll out soon.</p>
+          <p class="project-desc">Custom Built. A Ticketing system used to log and assign tickets to issues reported to the IT department on a daily basis.</p>
           <div class="project-footer">
             <a href="https://raxine091.github.io/IT-Support-Ticketing-System/" target="_blank" class="project-link">
               View Demo
@@ -839,9 +849,9 @@
           Send an Email
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
         </a>
-        <a href="https://linkedin.com/in/arnold-sam-82a63230a" target="_blank" class="btn btn-outline">LinkedIn</a>
-        <a href="https://github.com/raxine091" target="_blank" class="btn btn-outline">GitHub</a>
-        <a href="https://wa.link/dk900x" target="_blank" class="btn btn-outline">WhatsApp</a>
+        <a href="https://linkedin.com/in/arnold-sam-82a63230a" target="_blank" class="btn btn-primary">LinkedIn</a>
+        <a href="https://github.com/raxine091" target="_blank" class="btn btn-primary">GitHub</a>
+        <a href="https://wa.link/dk900x" target="_blank" class="btn btn-primary">WhatsApp</a>
       </div>
     </div>
   </section>
