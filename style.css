@@ -117,7 +117,7 @@
       padding: 0.3rem 0.8rem;
       border-radius: 20px;
       margin-bottom: 1.6rem;
-      animation: fadeUp 0.7s ease both;
+      animation: fadeUp 0.2s ease both;
     }
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(-24px); }
@@ -565,12 +565,11 @@
 
     .reveal {
       opacity: 0;
-      transform: translateY(28px);
+      transform: translateY(20px);
       transition: opacity 0.2s ease, transform 0.2s ease;
     }
     .reveal.visible { opacity: 1; transform: none; }
 
-    /* RESPONSIVE */
     @media (max-width: 900px) {
       #home { grid-template-columns: 1fr; text-align: center; }
       .hero-image { order: -1; }
