@@ -269,6 +269,18 @@
     .about-bio { color: var(--muted); line-height: 1.9; }
     .about-bio p + p { margin-top: 1rem; }
 
+
+    .skills-card{
+        text-align: top-left;
+         color:grey;
+        margin: 1.5rem;
+        padding: 8px;
+        display: grid;
+        grid-template-columns: 3-repeat(1fr);
+        min-width:120px;
+        align-items:center;
+        background: #ffffff15;
+    }
     .skills-list {
       order: 2;
       display: flex;
@@ -280,13 +292,23 @@
     .skill-tag {
       font-size: 0.78rem;
       padding: 0.35rem 0.85rem;
-      border-radius: 20px;
+      border-radius: 4px;
       background: #ffffff25;
       border: 1px solid #ffffff40;
       color: var(--text);
       letter-spacing: 0.04em;
     }
-    
+     .tech-card{
+        text-align: top-left;
+         color:grey;
+        margin: 1.5rem;
+        padding: 8px;
+        display: grid;
+        grid-template-columns: 3-repeat(1fr);
+        min-width:120px;
+        align-items:center;
+         background: #ffffff15;
+    }
     .tech-list {
       order: 2;
       display: flex;
