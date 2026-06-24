@@ -275,9 +275,10 @@
          color:grey;
         margin: 1.5rem;
         padding: 8px;
-        display: grid;
+        display: flex;
+        flex-direction: column;
         grid-template-columns: 3-repeat(1fr);
-        min-width:120px;
+        min-width:fit-content;
         align-items:center;
         background: #ffffff15;
     }
@@ -303,9 +304,10 @@
          color:grey;
         margin: 1.5rem;
         padding: 8px;
-        display: grid;
+        display: flex;
+         flex-direction: column ;
         grid-template-columns: 3-repeat(1fr);
-        min-width:120px;
+        min-width:fit-content;
         align-items:center;
          background: #ffffff15;
     }
