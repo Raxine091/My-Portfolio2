@@ -170,7 +170,7 @@
 
     .hero-desc {
       color: var(--muted);
-      font-size: 1rem;
+      font-size: 1.5rem;
       line-height: 1.8;
       max-width: 420px;
       margin-bottom: 2.2rem;
@@ -296,7 +296,7 @@
     }
 
     .about-bio { order: 1; }
-    .about-bio { color: var(--muted); line-height: 1.9; }
+    .about-bio { color: var(--muted);font-size:1.5rem; line-height: 1.9; }
     .about-bio p + p { margin-top: 1rem; }
 
 
@@ -553,7 +553,7 @@
 
     .project-desc {
       color: var(--muted);
-      font-size: 0.85rem;
+      font-size: 1.25rem;
       line-height: 1.7;
       flex: 1;
       margin-bottom: 1.2rem;
