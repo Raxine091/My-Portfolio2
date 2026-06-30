@@ -4,6 +4,6 @@ It highlights my abilities, skills and also showcases some of the projects I've 
 
 ### Languages used
 
-<div align="center">
+<div align="left">
   <img src="https://skillicons.dev/icons?i=javascript,html,css&theme=dark&perline=12" />
 </div>
